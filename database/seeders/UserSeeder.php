@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
             // Super Admin
             [
                 'name'      => "Super Admin",
-                'mobile'    => "01587421457",
+                'category_id'    => "1",
                 'email'     => "root@email.com",
                 'user_type' => "1",
                 'password'  => Hash::make('Pass1234'),
@@ -29,18 +29,18 @@ class UserSeeder extends Seeder
             ],
             // Admin
             [
-                'name'      => "Admin",
-                'mobile'    => "01587421458",
-                'email'     => "admin@email.com",
+                'name'      => "Mentor",
+                'category_id'    => "1",
+                'email'     => "mentor@email.com",
                 'user_type' => "2",
                 'password'  => Hash::make('Pass1234'),
                 "created_at" => $now_time,
                 "updated_at" => $now_time
             ],
             [
-                'name'      => "Staff",
-                'mobile'    => "01587421459",
-                'email'     => "staff@email.com",
+                'name'      => "User",
+                'category_id'    => "1",
+                'email'     => "user@email.com",
                 'user_type' => "3",
                 'password'  => Hash::make('Pass1234'),
                 "created_at" => $now_time,
@@ -49,6 +49,6 @@ class UserSeeder extends Seeder
         ];
 
         User::insert($rows);
-     
+
     }
 }

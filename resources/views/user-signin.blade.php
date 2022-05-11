@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'AASCO') }} | @yield('title')</title>
+    <title>{{ config('app.name', 'VirtualLeader') }} | VirtualLeader </title>
     <!-- Favicon icon -->
     {{-- <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png"> --}}
 
@@ -17,18 +17,32 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('assets/frontend/css/style.css')}}">
-    @stack('vendor-css')
-    @stack('onpage-css')
 </head>
 <body>
-            @include('layouts.partials.frontend.header')
-        <!--********************************** Content body start ***********************************-->
-            @yield('content')
-        <!--********************************** Content body end ***********************************-->
+   <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ asset('assets/frontend/images/signup.png')}}" alt="main image" class="main-image">
+            </div>
+            <div class="col-md-6 signup">
+                <h2>Virtual<strong>Leader</strong> </h2>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ex: Pranto@gmail.com"/>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Ex:123456">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                </form>
+            </div>
+        </div>
+   </div>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    @stack('vendor-js')
-    @stack('onpage-js')
 </body>
 </html>

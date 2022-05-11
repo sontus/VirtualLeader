@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    font-family: 'Poppins', sans-serif;
+}
+.btn-primary{
+    background: #0A243F;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0A243F;
+    border-color: #0A243F;
+}
+.btn-outline-primary {
+    color: #0A243F;
+    border-color: #0A243F;
+}
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #0A243F;
+    border-color: #0A243F;
+    
+}
+input[type=text],input[type=email],input[type=password],input[type=button] {
+    height: 50px;
+}
+.btn-primary {
+    background: #0A243F;
+    height: 50px;
+}
+/* home page */
+.home-box{
+    padding: 100px;
+}
+.home-title{
+    color: #0A243F;
+    font-size: 60px;
+    font-weight: 800;
+}
+.main-image{
+    width: 100%;
+    height: 100vh;
+}
+.signup{
+    padding: 150px;
+}
+
+/* mentor */
+.mentor-title{
+    text-align: center;
+}
+.mentors-box{
+    display: flex;
+
+}
+.mentor-box{
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 10px;
+}
+.mentor-name {
+    margin-top: -65px;
+    margin-left: 20px;
+}
+.mentor-category{
+    margin-left: 20px;
+}
+/* mentor-details */
+.detail-img{
+   border-radius: 15px;
+}
+.detail-title{
+    font-size: 55px;
+    font-weight: 600;
+    color: #0A243F;
+}
+.detail-category{
+    font-size: 35px;
+    font-weight: 600;
+    color: #0A243F;
+}
+.detail-cost{
+    font-size: 25px;
+    font-weight: 600;
+    color: #0A243F;
+    line-height: 33px;
+}
+.detail-description{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    
+}
+.booking-detail{
+    padding-top: 100px;
+}
+.detail-btn{
+    padding: 10px 125px;
+    font-weight: bold;
+}

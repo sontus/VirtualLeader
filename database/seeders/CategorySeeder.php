@@ -17,13 +17,13 @@ class CategorySeeder extends Seeder
         $now_time = date('Y-m-d');
         $rows = [
             [
-                'category_name'          => "Avian Products",
+                'category_name'          => "Web Design",
                 'row_status'    => 1,
                 "created_at"    => $now_time,
                 "updated_at"    => $now_time
             ],
             [
-                'category_name'          => "Ruminant Products",
+                'category_name'          => "Graphic Design",
                 'row_status'    => 1,
                 "created_at"    => $now_time,
                 "updated_at"    => $now_time

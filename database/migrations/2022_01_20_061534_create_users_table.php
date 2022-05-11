@@ -16,12 +16,13 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('mobile',20)->unique()->nullable();
+            $table->unsignedBigInteger('category_id')->nullable();
             $table->string('email')->unique();
-            $table->enum('user_type',['1','2','3'])->default('3')->comment('1 = super admin, 2 = admin, 3 = staff');
+            $table->enum('user_type',['1','2','3'])->default('3')->comment('1 = super admin, 2 = mentor, 3 = user');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();
         });
     }

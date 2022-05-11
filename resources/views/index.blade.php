@@ -8,16 +8,6 @@
 
 @endpush
 @section('content')
-    <div class="container">
-        <nav class="navbar navbar-light">
-            <a class="navbar-brand"><h3>Virtual<strong>Leader</strong> </h3></a>
-            <form class="form-inline">
-            <a href="#" class="mr-2" style="color:black;text-decoration: none;"> <strong>Become a mentor</strong> </a>
-            <a href="login.html" class="btn btn-outline-primary  mr-2">Log In</a>
-            <a href="signup.html" class="btn btn-primary" style="height: 40px;">Signup</a>
-            </form>
-        </nav>
-    </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
